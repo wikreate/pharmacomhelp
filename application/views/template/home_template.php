@@ -34,13 +34,9 @@
     <header id="masthead" class="site-header" role="banner">
       <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="<?= var_view_notice ? 'col-md-6' : 'col-md-12' ?>">
            <div id="logo" class="site-logo text-center">
-            <?php if (@$pages['url'] == '/'): ?>
-              <img src="/img/logo.png" alt="" />
-            <?php else: ?>
-              <a href="/" rel="home"><img src="/img/logo.png" alt="" /></a>
-            <?php endif ?>
+            <a href="http://pharmacomstore.org/" target="_blank" rel="home"><img src="/img/logo.png" alt="" /></a>
              
           </div><!-- #logo -->
 
@@ -61,15 +57,15 @@
             <div id="navbar" class="navbar-wrapper text-center">
              <section id="section-banner" class="section">
                 <div class="banner-wrapper text-center clearfix">
-                  <h3 class="banner-title text-danger h4"><?=CN_TTL?></h3>
-                  <div class="banner-content">
+           <!--        <h3 class="banner-title text-danger h4"><?=CN_TTL?></h3> -->
+                  <div class="banner-content top-customer">
                    <?=CN_DSC?>
                   </div>
                 </div>
               </section>
            </div><!-- #navbar -->
           </div>
-        <?php endif ?>
+        <?php endif ?> 
          
       </div>   
       </div>
@@ -153,6 +149,16 @@
             <div id="content" class="site-content col-md-9">
     
      {content}
+
+     <section class="section">
+                <div class="banner-wrapper banner-horizontal clearfix">
+                  <h4 class="banner-title h3"><?=NMS_TTL?></h4>
+                  <div class="banner-content">
+                    <?=NMS_DSC?>
+                  </div>
+                  <p><a href="#" id="order_callback" class="btn btn-custom"><?=CN_BUTTON?></a></p>
+                </div>
+              </section>
 
          </div>  
 
@@ -255,7 +261,7 @@
   <script type="text/javascript" src="/js/code.js"></script>
   <script type="text/javascript" src="/js/public/layout.js"></script>
  
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <div class="fog2">
    <div class="modal-callback center_magic">
       <div class="close2" onclick="$('.fog2').fadeOut(100);"></div>
@@ -272,6 +278,11 @@
 
 P.S. We we’ll reach out by email. Please make sure always to check your spam/junk folder." class="form-control callback_txt"></textarea> 
             </div> 
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="<?=RECAPTCHA?>"></div>
+            </div> 
+             
             <button type="submit" id="submit-btn" class="btn btn-custom"><?=SEND_BUTTON?></button>
         </form>
     </div>

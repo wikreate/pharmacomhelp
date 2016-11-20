@@ -32,17 +32,8 @@
                       </section>
                     </div>  
                   <?php endforeach ?>  
-              <?php endif ?>
-
-              <section class="section">
-                <div class="banner-wrapper banner-horizontal clearfix">
-                  <h4 class="banner-title h3"><?=NMS_TTL?></h4>
-                  <div class="banner-content">
-                    <?=NMS_DSC?>
-                  </div>
-                  <p><a href="#" id="order_callback" class="btn btn-custom"><?=CN_BUTTON?></a></p>
-                </div>
-              </section>
+              <?php endif ?> 
+               
 <!--
               <div class="row">
 

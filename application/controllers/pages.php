@@ -113,9 +113,9 @@ class Pages extends MY_Controller {
     public function callback(){
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
              
-            if (empty($_POST['email']) or empty($_POST['text'])) {
+            if (empty($_POST['email']) or empty($_POST['text']) or empty($_POST['g-recaptcha-response'])) {
                 alertError(REQ_FIELDS);
-            }
+            } 
 
             $email = $_POST['email'];
             $text  = $_POST['text'];

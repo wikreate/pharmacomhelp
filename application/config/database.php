@@ -50,11 +50,16 @@ $active_record = TRUE;
 
 if ($_SERVER['SERVER_NAME'] == 'kw.loc') {
 
+	define('RECAPTCHA', '6LdxeQwUAAAAAF3GpmZ1P2z2WXkj0sDpmSPu2VQ2');
+
 	$db['default']['hostname'] = 'localhost';
 	$db['default']['username'] = 'root';
 	$db['default']['password'] = '';
 	$db['default']['database'] = 'knowlege';
 }else{
+
+	define('RECAPTCHA', '6LcadwwUAAAAAPH8K8y_E96ePzn6tjjM-_m9fcJR');
+	
 	$db['default']['hostname'] = 'localhost';
 	$db['default']['username'] = 'pharmacomhelp';
 	$db['default']['password'] = 'fNpWci7xzBEc';
