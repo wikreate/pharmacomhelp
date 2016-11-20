@@ -1,0 +1,83 @@
+.t-right{
+	text-align: right;
+}
+
+.modal{
+	text-align: left !important;
+}
+
+td.handle   {
+	background-image:url(/theme/theme/assets/admin/layout/img/move.png); 
+    background-repeat:no-repeat; 
+    background-position: center center;   
+    cursor:pointer;  
+}
+
+.group_move_placeholder {
+  display: table-row; 
+}
+
+ .table-advance i.fa-center{
+	display: block;
+	text-align: center;
+}
+
+.ms-container{
+	width: 100% !important;
+}
+
+#multi-image, #related-products{
+	display: none;
+}
+
+div.tagsinput{
+	border: 1px solid #e5e5e5;
+}
+
+.form-horizontal .control-label{
+	text-align: left !important;
+}
+
+#fade-respond {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    border-radius: 20px;
+    z-index: 100990;
+    padding: 7px 20px;
+}
+.success-respond {
+    background-color: #51a351;
+    color: #fff;
+    cursor: pointer;
+}
+.success-respond:hover {
+    background-color: rgba(81, 163, 81, .7);
+}
+
+#mask_price, #mask_old_price{
+    text-align: left !important;
+}
+
+.radio-list > label{
+    display: inline-block;
+}
+
+.form-horizontal .checkbox, .form-horizontal .checkbox-inline, .form-horizontal .radio, .form-horizontal .radio-inline{
+    padding-top: 0!important;
+}
+
+.req{
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.select2-container .select2-choice .select2-arrow{
+    border-left:1px solid transparent;
+}
+
+.form-control.input-sm.search-s2 .select2-choice{
+    height: 28px !important;
+}
